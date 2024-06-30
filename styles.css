@@ -1,0 +1,1881 @@
+/* styles.css */
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-weight: 500;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main .container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4 {
+    color: #d36e6e;
+}
+
+/* styles.css */
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4 {
+    color: #b66a6a;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.intro, .featured-content, .resources, .news, .about, .contact {
+    margin-bottom: 2rem;
+}
+
+.featured-content .grid, .resources .grid, .team, .community-stories .grid, .partners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.featured-content .grid article, .resources .grid article, .news article, .team-member, .contact-info, .social-media, .partners .partner {
+    flex: 1 1 calc(33.333% - 2rem);
+    background-color: #e0e0e0;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.featured-content .grid article img, .resources .grid article img, .news article img, .team-member img, .partners .partner img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-content .grid article h3, .resources .grid article h3, .news article h3, .team-member h4, .contact-info h3, .social-media h3, .partners .partner h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.featured-content .grid article p, .resources .grid article p, .news article p, .team-member p, .contact-info p, .partners .partner p {
+    margin: 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact form label {
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.contact form button:hover {
+    background-color: #555;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-media ul li {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.social-media ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header .container, footer .container, main .container {
+        padding: 0 2rem;
+    }
+    
+    .featured-content .grid article, .resources .grid article, .news article, .team-member, .partners .partner {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    header .container, footer .container, main .container {
+        padding: 0 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .featured-content .grid article, .resources .grid article, .news article, .team-member, .partners .partner {
+        flex: 1 1 100%;
+    }
+
+    .contact form {
+        gap: 0.5rem;
+    }
+
+    .social-media ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .container, footer .container, main .container {
+        padding: 0 0.5rem;
+    }
+
+    nav ul li {
+        margin: 0.25rem 0;
+    }
+    
+    .intro, .featured-content, .resources, .news, .about, .contact {
+        padding: 1rem;
+    }
+
+    .contact form label {
+        font-size: 0.9rem;
+    }
+
+    .contact form input, .contact form textarea, .contact form button {
+        font-size: 0.9rem;
+    }
+
+    .social-media ul li {
+        padding: 0.25rem 0.5rem;
+    }
+}
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.burger-menu {
+    display: none; /* Hide burger menu by default for larger screens */
+}
+
+.burger-icon {
+    fill: #fff;
+    cursor: pointer;
+}
+
+.grid img {
+    width: 474px;
+    height: 474px;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+        z-index: 1000;
+    }
+
+    .nav-links {
+        position: relative;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 15px 20px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.intro, .featured-content, .resources, .news, .about, .contact {
+    margin-bottom: 2rem;
+}
+
+.featured-content .grid, .resources .grid {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.featured-content .grid article, .resources .grid article, .news article, .team-member, .contact-info, .social-media, .partners .partner {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.featured-content .grid article img, .resources .grid article img, .news article img, .team-member img, .partners .partner img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-content .grid article h3, .resources .grid article h3, .news article h3, .team-member h4, .contact-info h3, .social-media h3, .partners .partner h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.featured-content .grid article p, .resources .grid article p, .news article p, .team-member p, .contact-info p, .partners .partner p {
+    margin: 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact form label {
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.contact form button:hover {
+    background-color: #555;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-media ul li {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.social-media ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #f4f4f4;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media li {
+    display: inline;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1);
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #0056b3;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-bottom p {
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        min-width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+article img {
+    width: 330px;
+    height: 220px;
+}
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.top-bar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    
+    width: 150px;
+    height: auto;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+.nav-bar {
+    padding: 20px 0;
+}
+
+.nav-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+header {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.top-bar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    
+    width: 150px;
+    height: auto;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    
+    display: flex;
+}
+
+.social-icons img {
+    width: 35px;
+    height: 35px;
+    
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+    width: 150px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 55px;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.sign-up button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 50px;
+    width: 85px;
+    height: 40px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    animation: fadeIn 0.5s;
+}
+/* General Styles */
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.top-bar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sign-up button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.community-stories img {
+    width: 330px;
+    height: 220px;
+}
+.news img {
+    width: 550px;
+    height: 330px;
+}
+.team-member img {
+    width: 330px;
+    height: 330px;
+}
+.partner img {
+    width: 330px;
+    height: 330px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .search-bar {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .search-bar input[type="text"] {
+        width: 70%;
+    }
+
+    .search-bar button {
+        width: 25%;
+    }
+
+    .sign-up button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar input[type="text"],
+    .search-bar button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .sign-up button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Footer Styles */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #f4f4f4;
+}
+
+.footer-section p {
+    margin-bottom: 5px;
+    color: #ccc;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media a:hover img {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Hover Animations */
+
+/* General Hover Animations */
+a {
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Button Hover Animation */
+button, .sign-up {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .sign-up:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Navigation Links Hover Animation */
+.nav-links a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Social Icons Hover Animation */
+.social-icons a:hover img {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+/* Search Bar Hover Animation */
+.search-bar input[type="text"]:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Footer Links Hover Animation */
+.footer-section ul li a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Social Media Icons Hover Animation */
+.social-media a:hover img {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    animation: fadeIn 0.5s; /* Fade in animation */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 5px;
+    animation: slideIn 0.5s; /* Slide in animation */
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#signUpForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#signUpForm label {
+    margin-bottom: 5px;
+}
+
+#signUpForm input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#signUpForm button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#signUpForm button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Modal Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideIn {
+    from {transform: translateY(-50px);}
+    to {transform: translateY(0);}
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#signUpForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#signUpForm label {
+    margin-bottom: 5px;
+}
+
+#signUpForm input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#signUpForm button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+#signUpForm button:hover {
+    background-color: #0056b3;
+}
+
+#signUpBtn :hover {
+    background-color: #0056b3;
+    margin-left: 40px;
+}
+
+.nav-bar {
+    padding: 20px 0;
+}
+
+.nav-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+
+@media (max-width: 768px) {
+    
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #f4f4f4;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.social-media {
+    display: flex
+}
+.social-media img {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+}
+/* Header Styles */
+
+/* Top bar animation */
+.top-bar {
+    background-color: #333;
+    padding: 10px 0;
+    animation: slideDown 0.5s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Logo animation */
+.logo {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navigation animation */
+.nav-bar {
+    padding: 20px 0;
+    animation: slideInFromLeft 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Nav links animation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    animation: fadeInNavLinks 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInNavLinks {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Burger menu animation */
+.burger-menu {
+    display: none;
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+        animation: slideInFromRight 0.8s ease-out forwards;
+        opacity: 0;
+    }
+
+    @keyframes slideInFromRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+/* Footer Styles */
+
+/* Footer content animation */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    animation: slideInFromTop 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Social media icons animation */
+.social-media {
+    display: flex;
+    gap: 10px;
+    animation: fadeInSocialIcons 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInSocialIcons {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Newsletter animation */
+.newsletter {
+    animation: slideInFromBottom 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Footer bottom animation */
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    animation: fadeInFooterBottom 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInFooterBottom {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  a {
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Button Hover Animation */
+button, .sign-up {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .sign-up:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+/* Navigation Links Hover Animation */
+.nav-links a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Social Icons Hover Animation */
+.social-icons a:hover img {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+/* Search Bar Hover Animation */
+.search-bar input[type="text"]:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+/* General Styles */
+body {
+    font-family: "ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+
+/* Top bar animation */
+.top-bar {
+    background-color: #333;
+    padding: 10px 0;
+    animation: slideDown 0.5s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Logo animation */
+.logo {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navigation animation */
+.nav-bar {
+    padding: 20px 0;
+    animation: slideInFromLeft 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Nav links animation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    animation: fadeInNavLinks 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInNavLinks {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Burger menu animation */
+.burger-menu {
+    display: none;
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+        animation: slideInFromRight 0.8s ease-out forwards;
+        opacity: 0;
+    }
+
+    @keyframes slideInFromRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+/* Footer Styles */
+
+/* Footer content animation */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    animation: slideInFromTop 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Social media icons animation */
+.social-media {
+    display: flex;
+    gap: 10px;
+    animation: fadeInSocialIcons 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInSocialIcons {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Newsletter animation */
+.newsletter {
+    animation: slideInFromBottom 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Footer bottom animation */
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    animation: fadeInFooterBottom 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInFooterBottom {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hover Animations */
+
+/* General Hover Animations */
+a {
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Button Hover Animation */
+button, .sign-up {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .sign-up:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Navigation Links Hover Animation */
+.nav-links a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Social Icons Hover Animation */
+.social-icons a:hover img {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+/* Search Bar Hover Animation */
+.search-bar input[type="text"]:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Footer Links Hover Animation */
+.footer-section ul li a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Social Media Icons Hover Animation */
+.social-media a:hover img {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideIn {
+    from {transform: translateY(-50px);}
+    to {transform: translateY(0);}
+}

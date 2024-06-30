@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Global Warming Awareness Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo">
+                    <a href="https://www.tbceducation.ge/"><img src="images/logo.png" alt="TBC"  style="width: 80px; height: 75px; margin-right: 80px;" ></a>
+                </div>
+                <div class="container2">
+                    <nav>
+                        <div class="burger-menu" >
+                            <svg class="burger-icon" viewBox="0 0 100 80" width="20" height="20" style="margin-bottom: 100px; margin-left:px;">
+                                <rect width="100" height="10"></rect>
+                                <rect y="30" width="100" height="10"></rect>
+                                <rect y="60" width="100" height="10"></rect>
+                            </svg>
+                        </div>
+                        
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                
+                <div class="header-right" style="width: 160px;">
+                    <div class="sign-up">
+                        <button  id="signUpBtn">sign up</button>
+                        
+                    </div>
+                    <div class="social-icons" >
+                        <a href="#"><img src="images/facebook-icon.png" alt="Facebook" width="60" height="60"></a>
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter" width="60" height="60"></a>
+                        <a href="#"><img src="images/instagram-icon.png" alt="Instagram" width="30" height="30"></a>
+                        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn" width="30" height="30"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signUpForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Reach out to us with any questions, comments, or suggestions.</p>
+                <form action="mailto:info@globalwarminghub.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Our Office</h3>
+                    <p>123 Climate Change Blvd, Suite 100<br>Green City, Earth 12345</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@globalwarminghub.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section about">
+                        <h3>About Global Warming Awareness Hub</h3>
+                        <p>Global Warming Awareness Hub is dedicated to raising awareness and understanding of climate change and its impacts. We provide reliable information, resources, and tools to help individuals and communities take meaningful action.</p>
+                    </div>
+                    <div class="footer-section links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section social">
+                        <h3>Follow Us</h3>
+                        <ul class="social-media" style="background-color: #333;">
+                            <li><a href="#"><img src="images/facebook-icon.png" alt="Facebook" style="width: 50px; height: 50px;"></a></li>
+                            <li><a href="#"><img src="images/twitter-icon.png" alt="Twitter" style="width: 50px; height: 50px;"></a></li>
+                            <li><a href="#"><img src="images/instagram-icon.png" alt="Instagram" style="width: 50px; height: 50px;"></a></li>
+                            <li><a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn" style="width: 50px; height: 50px;"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter to stay updated on the latest news and events related to global warming and climate change.</p>
+                        <form action="subscribe.php" method="post">
+                            <input type="email" name="email" placeholder="Your Email Address" required>
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Global Warming Awareness Hub | Designed by Your Name</p>
+                </div>
+            </div>
+        </footer>
+        
+        
+        <script src=”https://code.jquery.com/jquery-3.2.1.slim.min.js” integrity=”sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN” crossorigin=”anonymous”></script>
+
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js integrity=”sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q” crossorigin=”anonymous”></script>
+        
+        <script src=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js” integrity=”sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl” crossorigin=”anonymous”></script>
+</body>
+</html>
